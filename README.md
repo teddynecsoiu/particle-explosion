@@ -17,5 +17,5 @@ To make sure you have SDL installed and running correctly, follow [this tutorial
 Once you have checked and you have SDL installed and running correctly, open a terminal window, navigate to the location of the project folder, `cd` in it, and execute: 
 
 ```
-g++ -lSDL -w main.cpp src/screen.cpp src/particle.cpp src/swarm.cpp -o main.o
+g++ -w -lSDL2 main.cpp src/screen.cpp src/particle.cpp src/swarm.cpp -o main.o
 ```

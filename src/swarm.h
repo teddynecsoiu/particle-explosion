@@ -7,16 +7,17 @@ namespace particleBomb
 {
 class Swarm
 {
-  public:
-    const static int NPARTICLES = 5000;
+public:
+  const static int NPARTICLES = 5000;
 
-  private:
-    Particle *m_pParticle;
+private:
+  Particle *m_pParticle;
 
-  public:
-    Swarm();
-    ~Swarm();
-    const Particle *const getParticles() { return m_pParticle; };
+public:
+  Swarm();
+  ~Swarm();
+  void update();
+  const Particle *const getParticles() { return m_pParticle; };
 };
 } // namespace particleBomb
 #endif

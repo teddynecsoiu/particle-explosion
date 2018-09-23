@@ -22,6 +22,9 @@ int main()
   {
     int elapsed = SDL_GetTicks();
 
+    swarm.update();
+    screen.clear();
+
     const particleBomb::Particle *const pParticles = swarm.getParticles();
 
     unsigned char red = (unsigned char)((1 + sin(elapsed * 0.001)) * 128);
