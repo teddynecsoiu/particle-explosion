@@ -23,7 +23,7 @@ int main()
     int elapsed = SDL_GetTicks();
 
     swarm.update(elapsed);
-    screen.clear();
+    // screen.clear();
 
     const particleBomb::Particle *const pParticles = swarm.getParticles();
 
@@ -39,6 +39,8 @@ int main()
       int y = particle.m_y * particleBomb::Screen::SCREEN_WIDTH / 2 + particleBomb::Screen::SCREEN_HEIGHT / 2;
       screen.setPixel(x, y, red, green, blue);
     }
+
+    screen.boxBlur();
 
     // Draw on screen
     screen.update();
