@@ -12,11 +12,12 @@ public:
 
 private:
   Particle *m_pParticle;
+  int lastTime;
 
 public:
   Swarm();
   ~Swarm();
-  void update();
+  void update(int elapsed);
   const Particle *const getParticles() { return m_pParticle; };
 };
 } // namespace particleBomb

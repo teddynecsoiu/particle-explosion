@@ -22,7 +22,7 @@ int main()
   {
     int elapsed = SDL_GetTicks();
 
-    swarm.update();
+    swarm.update(elapsed);
     screen.clear();
 
     const particleBomb::Particle *const pParticles = swarm.getParticles();
