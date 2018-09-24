@@ -36,7 +36,7 @@ int main()
       particleBomb::Particle particle = pParticles[i];
 
       int x = (particle.m_x + 1) * particleBomb::Screen::SCREEN_WIDTH / 2;
-      int y = (particle.m_y + 1) * particleBomb::Screen::SCREEN_HEIGHT / 2;
+      int y = particle.m_y * particleBomb::Screen::SCREEN_WIDTH / 2 + particleBomb::Screen::SCREEN_HEIGHT / 2;
       screen.setPixel(x, y, red, green, blue);
     }
 
